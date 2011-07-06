@@ -42,6 +42,7 @@
 		B074065213C07E7A00D90EA6 /* ASKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASKitTests.h; sourceTree = "<group>"; };
 		B074065413C07E7A00D90EA6 /* ASKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASKitTests.m; sourceTree = "<group>"; };
 		B0E7DBED13C50D6E0024E130 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B0E7DBF513C510120024E130 /* README.md */ = {isa = PBXFileReference; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				B074063313C07E7A00D90EA6 /* Frameworks */,
 				B074063213C07E7A00D90EA6 /* Products */,
 				B0E7DBED13C50D6E0024E130 /* LICENSE */,
+				B0E7DBF513C510120024E130 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
