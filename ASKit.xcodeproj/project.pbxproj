@@ -32,15 +32,16 @@
 		B074063713C07E7A00D90EA6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B074063813C07E7A00D90EA6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B074063913C07E7A00D90EA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B074063C13C07E7A00D90EA6 /* ASKit-Info.plist */ = {isa = PBXFileReference; path = "ASKit-Info.plist"; sourceTree = "<group>"; };
+		B074063C13C07E7A00D90EA6 /* ASKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASKit-Info.plist"; sourceTree = "<group>"; };
 		B074063E13C07E7A00D90EA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B074064013C07E7A00D90EA6 /* ASKit-Prefix.pch */ = {isa = PBXFileReference; path = "ASKit-Prefix.pch"; sourceTree = "<group>"; };
+		B074064013C07E7A00D90EA6 /* ASKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASKit-Prefix.pch"; sourceTree = "<group>"; };
 		B074064613C07E7A00D90EA6 /* ASKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B074064D13C07E7A00D90EA6 /* ASKitTests-Info.plist */ = {isa = PBXFileReference; path = "ASKitTests-Info.plist"; sourceTree = "<group>"; };
+		B074064D13C07E7A00D90EA6 /* ASKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASKitTests-Info.plist"; sourceTree = "<group>"; };
 		B074064F13C07E7A00D90EA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B074065113C07E7A00D90EA6 /* ASKitTests-Prefix.pch */ = {isa = PBXFileReference; path = "ASKitTests-Prefix.pch"; sourceTree = "<group>"; };
+		B074065113C07E7A00D90EA6 /* ASKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASKitTests-Prefix.pch"; sourceTree = "<group>"; };
 		B074065213C07E7A00D90EA6 /* ASKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASKitTests.h; sourceTree = "<group>"; };
 		B074065413C07E7A00D90EA6 /* ASKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASKitTests.m; sourceTree = "<group>"; };
+		B0E7DBED13C50D6E0024E130 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 				B074064B13C07E7A00D90EA6 /* ASKitTests */,
 				B074063313C07E7A00D90EA6 /* Frameworks */,
 				B074063213C07E7A00D90EA6 /* Products */,
+				B0E7DBED13C50D6E0024E130 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -425,6 +427,7 @@
 				B074065A13C07E7A00D90EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B074065B13C07E7A00D90EA6 /* Build configuration list for PBXNativeTarget "ASKitTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +436,7 @@
 				B074065D13C07E7A00D90EA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
