@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B04024F61459B782007ED97A /* ASKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B04024F51459B782007ED97A /* ASKit.h */; };
 		B074063513C07E7A00D90EA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B074063413C07E7A00D90EA6 /* Cocoa.framework */; };
 		B074063F13C07E7A00D90EA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B074063D13C07E7A00D90EA6 /* InfoPlist.strings */; };
 		B074064713C07E7A00D90EA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B074063413C07E7A00D90EA6 /* Cocoa.framework */; };
@@ -14,6 +15,8 @@
 		B074065013C07E7A00D90EA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B074064E13C07E7A00D90EA6 /* InfoPlist.strings */; };
 		B074065313C07E7A00D90EA6 /* ASKitTests.h in Resources */ = {isa = PBXBuildFile; fileRef = B074065213C07E7A00D90EA6 /* ASKitTests.h */; };
 		B074065513C07E7A00D90EA6 /* ASKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B074065413C07E7A00D90EA6 /* ASKitTests.m */; };
+		B093EA5A1458A61100D6F9E6 /* ASPing.h in Headers */ = {isa = PBXBuildFile; fileRef = B093EA581458A61100D6F9E6 /* ASPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B093EA5B1458A61100D6F9E6 /* ASPing.m in Sources */ = {isa = PBXBuildFile; fileRef = B093EA591458A61100D6F9E6 /* ASPing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B04024F51459B782007ED97A /* ASKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKit.h; sourceTree = "<group>"; };
 		B074063113C07E7A00D90EA6 /* ASKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B074063413C07E7A00D90EA6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B074063713C07E7A00D90EA6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -41,8 +45,10 @@
 		B074065113C07E7A00D90EA6 /* ASKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASKitTests-Prefix.pch"; sourceTree = "<group>"; };
 		B074065213C07E7A00D90EA6 /* ASKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASKitTests.h; sourceTree = "<group>"; };
 		B074065413C07E7A00D90EA6 /* ASKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASKitTests.m; sourceTree = "<group>"; };
+		B093EA581458A61100D6F9E6 /* ASPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPing.h; sourceTree = "<group>"; };
+		B093EA591458A61100D6F9E6 /* ASPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPing.m; sourceTree = "<group>"; };
 		B0E7DBED13C50D6E0024E130 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B0E7DBF513C510120024E130 /* README.md */ = {isa = PBXFileReference; path = README.md; sourceTree = "<group>"; };
+		B0E7DBF513C510120024E130 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 		B074063A13C07E7A00D90EA6 /* ASKit */ = {
 			isa = PBXGroup;
 			children = (
+				B04024F51459B782007ED97A /* ASKit.h */,
+				B093EA581458A61100D6F9E6 /* ASPing.h */,
+				B093EA591458A61100D6F9E6 /* ASPing.m */,
 				B074063B13C07E7A00D90EA6 /* Supporting Files */,
 			);
 			path = ASKit;
@@ -151,6 +160,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B093EA5A1458A61100D6F9E6 /* ASPing.h in Headers */,
+				B04024F61459B782007ED97A /* ASKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B093EA5B1458A61100D6F9E6 /* ASPing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +319,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -325,6 +338,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
