@@ -12,10 +12,11 @@
     NSMutableDictionary* userInfo; 
 }
 
-- (void)pingIP:(NSString *)pingAddr;
-- (void)pingIPwithParams:(NSDictionary *)pingParameters;
+- (int)pingIP:(NSString *)pingAddr isAsynchronous:(BOOL)asynch;
+- (int)pingIPwithParams:(NSDictionary *)pingParameters isAsynchronous:(BOOL)asynch;
 - (void)checkPingStatus:(NSNotification *)aNotification;
 
 - (void)_pingIP:(NSArray *)params;
+- (NSTask *)_pingIP_Synch:(NSArray *)params;
 
 @end

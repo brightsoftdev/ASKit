@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B04024F61459B782007ED97A /* ASKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B04024F51459B782007ED97A /* ASKit.h */; };
+		B04024F61459B782007ED97A /* ASKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B04024F51459B782007ED97A /* ASKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B074063513C07E7A00D90EA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B074063413C07E7A00D90EA6 /* Cocoa.framework */; };
 		B074063F13C07E7A00D90EA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B074063D13C07E7A00D90EA6 /* InfoPlist.strings */; };
 		B074064713C07E7A00D90EA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B074063413C07E7A00D90EA6 /* Cocoa.framework */; };

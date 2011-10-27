@@ -23,13 +23,21 @@
     return self;
 }
 
-- (void)pingIP:(NSString*)pingAddr { // FIXME: Provide overloads with extra arguments
+- (int)pingIP:(NSString *)pingAddr isAsynchronous:(BOOL)asynch {
     userInfo = [NSMutableDictionary dictionaryWithObject:pingAddr forKey:@"pingAddr"]; // Attach pingAddr to dictionary
     
-    [self _pingIP:[NSArray arrayWithObjects:@"-c2", @"-o", pingAddr, nil]]; // Create arguments (-c2 -o pingAddr)
+    NSArray *params = [NSArray arrayWithObjects:@"-c2", @"-o", pingAddr, nil]; // Construct paramaters array
+    
+    if (asynch == FALSE) { // Run task synchronously and return ping exit state
+        NSTask *ping = [self _pingIP_Synch:params];
+        return [ping terminationStatus];
+    } else { // Run task asynchronously and return success (launched ping)
+        [self _pingIP:params];
+        return 0;
+    }
 }
 
-- (void)pingIPwithParams:(NSDictionary *)pingParameters {
+- (int)pingIPwithParams:(NSDictionary *)pingParameters isAsynchronous:(BOOL)asynch {
     
     // DICT FORMAT:
     //      * pingAddr (NSString)
@@ -44,7 +52,13 @@
     
     NSLog(@"%@",params);
     
-    [self _pingIP:params];
+    if (asynch == TRUE) {
+        [self _pingIP:params];
+        return 0;
+    } else {
+        NSTask *ping = [self _pingIP_Synch:params];
+        return [ping terminationStatus];
+    }
     
 }
 
@@ -65,12 +79,25 @@
 }
 
 - (void)_pingIP:(NSArray *)params {
+    
     NSTask *ping = [[NSTask alloc] init];
     
     [ping setLaunchPath:@"/sbin/ping"]; // This path SHOULD work on all OS X versions
     [ping setArguments:params];
     [ping launch]; // Launch ping
 
+}
+
+- (NSTask *)_pingIP_Synch:(NSArray *)params {
+    
+    NSTask *ping = [[NSTask alloc] init];
+    
+    [ping setLaunchPath:@"/sbin/ping"]; // This path SHOULD work on all OS X versions
+    [ping setArguments:params];
+    [ping launch]; // Launch ping
+    [ping waitUntilExit]; // This makes it synchronous!
+    
+    return ping; // Since it's done via Synch calls, we'll return the task to the caller
 }
 
 @end
