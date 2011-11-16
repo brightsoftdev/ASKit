@@ -18,7 +18,6 @@
 
 @implementation ASPingTests
 
-// All code under test must be linked into the Unit Test bundle
 - (void)testLocalhostSynchronous
 {
     ASPing *ping = [[ASPing new] init];
