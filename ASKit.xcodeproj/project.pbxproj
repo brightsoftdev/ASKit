@@ -34,6 +34,7 @@
 		B0023923147421C700F4D064 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B00239271474224C00F4D064 /* ASPingTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPingTests.h; sourceTree = "<group>"; };
 		B00239281474224C00F4D064 /* ASPingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPingTests.m; sourceTree = "<group>"; };
+		B028498B1474659D0008820F /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
 		B04024F51459B782007ED97A /* ASKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKit.h; sourceTree = "<group>"; };
 		B074063113C07E7A00D90EA6 /* ASKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B074063413C07E7A00D90EA6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -43,7 +44,7 @@
 		B074063C13C07E7A00D90EA6 /* ASKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASKit-Info.plist"; sourceTree = "<group>"; };
 		B074063E13C07E7A00D90EA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B074064013C07E7A00D90EA6 /* ASKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASKit-Prefix.pch"; sourceTree = "<group>"; };
-		B074064613C07E7A00D90EA6 /* ASKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B074064613C07E7A00D90EA6 /* ASKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ASKitTests.octest; path = ASKitLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B074064D13C07E7A00D90EA6 /* ASKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASKitTests-Info.plist"; sourceTree = "<group>"; };
 		B074064F13C07E7A00D90EA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B074065113C07E7A00D90EA6 /* ASKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASKitTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 				B074063213C07E7A00D90EA6 /* Products */,
 				B0E7DBED13C50D6E0024E130 /* LICENSE */,
 				B0E7DBF513C510120024E130 /* README.md */,
+				B028498B1474659D0008820F /* CHANGELOG.md */,
 			);
 			sourceTree = "<group>";
 		};

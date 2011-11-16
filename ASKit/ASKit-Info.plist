@@ -6,6 +6,8 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Currently unstable and only for use in Azurenode internal projects</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
@@ -17,7 +19,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1a</string>
+	<string>0.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -26,7 +28,5 @@
 	<string>Copyright © 2011 Azurenode. Licensed under Creative Commons BY-NC-SA</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
-	<key>CFBundleGetInfoString</key>
-	<string>Currently unstable and only for use in Azurenode internal projects</string>
 </dict>
 </plist>
