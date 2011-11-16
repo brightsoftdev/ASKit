@@ -17,14 +17,16 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.1a</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2011 Azurenode. All rights reserved.</string>
+	<string>Copyright © 2011 Azurenode. Licensed under Creative Commons BY-NC-SA</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
+	<key>CFBundleGetInfoString</key>
+	<string>Currently unstable and only for use in Azurenode internal projects</string>
 </dict>
 </plist>

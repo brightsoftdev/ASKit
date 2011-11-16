@@ -1,10 +1,18 @@
-//
-//  ASPing.m
-//  ASKit
-//
-//  Created by Robert Tully on 26/10/2011.
-//  Copyright 2011 Azurenode. All rights reserved.
-//
+// ==CLASS================================================ //
+//                                                         //
+//  ASPing.m                                               //
+//  ASKit                                                  //
+//                                                         //
+//  Created by Robert Tully on 26/10/2011.                 //
+//                                                         //
+// --LICENSE---------------------------------------------- //
+//                                                         //
+//  Licensed under Creative Commons BY-NC-SA 3.0 Unported  //
+//                                                         //
+//  More information can be found in the LICENSE file      //
+//  within the root folder of this project.                //
+//                                                         //
+// ======================================================= //
 
 #import "ASPing.h"
 
