@@ -70,18 +70,18 @@
     
 }
 
-- (void)checkPingStatus:(NSNotification *)aNotification { // FIXME: This function is unbearably horrible.
+- (void)checkPingStatus:(NSNotification *)aNotification { // FIXME: Untidy, clumsy function.
     
     int status = [[aNotification object] terminationStatus]; // Grab ping exit status
     
     if (status == 0) {
         [userInfo setValue:@"0" forKey:@"status"]; // Update userInfo with return code (as NSString (Damn you NSDictionary))
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"ASPingCompleted" object:self userInfo:userInfo]; // Success
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"ASPingCompleted" object:self userInfo:userInfo]; // Win
     } else {
         [userInfo setValue:@"1" forKey:@"status"]; // Update userInfo with return code (as NSString (Damn you NSDictionary))
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"ASPingCompleted" object:self userInfo:userInfo]; // Failure
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"ASPingCompleted" object:self userInfo:userInfo]; // Fail
     }
     
 }
@@ -90,6 +90,7 @@
     
     NSTask *ping = [[NSTask alloc] init];
     
+	// FIXME: Pinger should not use external program for pinging.
     [ping setLaunchPath:@"/sbin/ping"]; // This path SHOULD work on all OS X versions
     [ping setArguments:params];
     [ping launch]; // Launch ping
@@ -99,7 +100,8 @@
 - (NSTask *)_pingIP_Synch:(NSArray *)params {
     
     NSTask *ping = [[NSTask alloc] init];
-    
+	
+	// FIXME: Pinger should not use external program for pinging.
     [ping setLaunchPath:@"/sbin/ping"]; // This path SHOULD work on all OS X versions
     [ping setArguments:params];
     [ping launch]; // Launch ping
