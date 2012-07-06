@@ -8,3 +8,5 @@ Call it a storage cupboard or a safe haven for random code, this contains any ra
 ### Current classes
 - ASPing
 	- Checks if a host is up asynchronously or synchronously.
+- ASNotification
+    - Simplified wrapper around OS X 10.8+ Notification Center

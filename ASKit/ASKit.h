@@ -19,4 +19,9 @@
 
 #import "ASPing.h"
 
+// ASNotification relies upon the presence of the 10.8 Notification Center APIs
+#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_8
+#import "ASNotification.h"
+#endif
+
 #endif

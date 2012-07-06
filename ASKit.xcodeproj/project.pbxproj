@@ -18,6 +18,8 @@
 		B074065513C07E7A00D90EA6 /* ASKitLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B074065413C07E7A00D90EA6 /* ASKitLogicTests.m */; };
 		B093EA5A1458A61100D6F9E6 /* ASPing.h in Headers */ = {isa = PBXBuildFile; fileRef = B093EA581458A61100D6F9E6 /* ASPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B093EA5B1458A61100D6F9E6 /* ASPing.m in Sources */ = {isa = PBXBuildFile; fileRef = B093EA591458A61100D6F9E6 /* ASPing.m */; };
+		E88EDEFE15A78B51001DF3FB /* ASNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EDEFC15A78B51001DF3FB /* ASNotification.h */; };
+		E88EDEFF15A78B51001DF3FB /* ASNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E88EDEFD15A78B51001DF3FB /* ASNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,7 @@
 		B074063C13C07E7A00D90EA6 /* ASKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASKit-Info.plist"; sourceTree = "<group>"; };
 		B074063E13C07E7A00D90EA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B074064013C07E7A00D90EA6 /* ASKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASKit-Prefix.pch"; sourceTree = "<group>"; };
-		B074064613C07E7A00D90EA6 /* ASKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ASKitTests.octest; path = ASKitLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B074064613C07E7A00D90EA6 /* ASKitLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASKitLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B074064D13C07E7A00D90EA6 /* ASKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASKitTests-Info.plist"; sourceTree = "<group>"; };
 		B074064F13C07E7A00D90EA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B074065113C07E7A00D90EA6 /* ASKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASKitTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		B093EA591458A61100D6F9E6 /* ASPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPing.m; sourceTree = "<group>"; };
 		B0E7DBED13C50D6E0024E130 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B0E7DBF513C510120024E130 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		E88EDEFC15A78B51001DF3FB /* ASNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNotification.h; sourceTree = "<group>"; };
+		E88EDEFD15A78B51001DF3FB /* ASNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNotification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				B074063113C07E7A00D90EA6 /* ASKit.framework */,
-				B074064613C07E7A00D90EA6 /* ASKitTests.octest */,
+				B074064613C07E7A00D90EA6 /* ASKitLogicTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +129,8 @@
 				B04024F51459B782007ED97A /* ASKit.h */,
 				B093EA581458A61100D6F9E6 /* ASPing.h */,
 				B093EA591458A61100D6F9E6 /* ASPing.m */,
+				E88EDEFC15A78B51001DF3FB /* ASNotification.h */,
+				E88EDEFD15A78B51001DF3FB /* ASNotification.m */,
 				B074063B13C07E7A00D90EA6 /* Supporting Files */,
 			);
 			path = ASKit;
@@ -173,6 +179,7 @@
 			files = (
 				B093EA5A1458A61100D6F9E6 /* ASPing.h in Headers */,
 				B04024F61459B782007ED97A /* ASKit.h in Headers */,
+				E88EDEFE15A78B51001DF3FB /* ASNotification.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +220,7 @@
 			);
 			name = ASKitLogicTests;
 			productName = ASKitTests;
-			productReference = B074064613C07E7A00D90EA6 /* ASKitTests.octest */;
+			productReference = B074064613C07E7A00D90EA6 /* ASKitLogicTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +229,7 @@
 		B074062713C07E7A00D90EA6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Azurenode;
 			};
 			buildConfigurationList = B074062A13C07E7A00D90EA6 /* Build configuration list for PBXProject "ASKit" */;
@@ -284,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B093EA5B1458A61100D6F9E6 /* ASPing.m in Sources */,
+				E88EDEFF15A78B51001DF3FB /* ASNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +379,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -391,6 +400,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -411,6 +421,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -432,6 +443,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
