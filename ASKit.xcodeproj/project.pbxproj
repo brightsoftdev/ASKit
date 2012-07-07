@@ -18,8 +18,8 @@
 		B074065513C07E7A00D90EA6 /* ASKitLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B074065413C07E7A00D90EA6 /* ASKitLogicTests.m */; };
 		B093EA5A1458A61100D6F9E6 /* ASPing.h in Headers */ = {isa = PBXBuildFile; fileRef = B093EA581458A61100D6F9E6 /* ASPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B093EA5B1458A61100D6F9E6 /* ASPing.m in Sources */ = {isa = PBXBuildFile; fileRef = B093EA591458A61100D6F9E6 /* ASPing.m */; };
-		E88EDEFE15A78B51001DF3FB /* ASNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EDEFC15A78B51001DF3FB /* ASNotification.h */; };
-		E88EDEFF15A78B51001DF3FB /* ASNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E88EDEFD15A78B51001DF3FB /* ASNotification.m */; };
+		E88EDEFE15A78B51001DF3FB /* ASNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EDEFC15A78B51001DF3FB /* ASNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E88EDF1315A7A159001DF3FB /* ASNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E88EDEFD15A78B51001DF3FB /* ASNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,7 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B093EA5B1458A61100D6F9E6 /* ASPing.m in Sources */,
-				E88EDEFF15A78B51001DF3FB /* ASNotification.m in Sources */,
+				E88EDF1315A7A159001DF3FB /* ASNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

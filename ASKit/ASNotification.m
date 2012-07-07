@@ -14,7 +14,7 @@
 //                                                         //
 // ======================================================= //
 
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_8
+//#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_8
 #import "ASNotification.h"
 
 @implementation ASNotification
@@ -25,17 +25,17 @@
     [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:self];
 }
 
-- (void)setAllAttributes:(NSString *)title:(NSString *)subtitle:(NSString *)info {
+- (void)setAllAttributes:(NSString *)title subtitle:(NSString *)subtitle info:(NSString *)info {
     self.title = title;
     self.subtitle = subtitle;
     self.informativeText = info;
 }
 
-- (void)setAndSend:(NSString *)title:(NSString *)subtitle:(NSString *)info {
+- (void)setAndSend:(NSString *)title subtitle:(NSString *)subtitle info:(NSString *)info {
     // Just chain the other two custom NSUserNotification additions together.
-    [self setAllAttributes:title:subtitle:info];
+    [self setAllAttributes:title subtitle:subtitle info:info];
     [self sendNotification];
 }
 
 @end
-#endif
+//#endif

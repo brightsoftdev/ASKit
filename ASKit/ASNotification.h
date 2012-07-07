@@ -19,14 +19,14 @@
 //                                                         //
 // ======================================================= //
 
-#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_8
+//#if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_8
 #import <Foundation/Foundation.h>
 
 @interface ASNotification : NSUserNotification
 
 - (void)sendNotification;
-- (void)setAllAttributes:(NSString *)title:(NSString *)subtitle:(NSString *)info;
-- (void)setAndSend:(NSString *)title:(NSString *)subtitle:(NSString *)info;
+- (void)setAllAttributes:(NSString *)title subtitle:(NSString *)subtitle info:(NSString *)info;
+- (void)setAndSend:(NSString *)title subtitle:(NSString *)subtitle info:(NSString *)info;
 
 @end
-#endif
+//#endif
